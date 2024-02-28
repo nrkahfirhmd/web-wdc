@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaushan+Script&display=swap');
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .section-hero {
     display: flex;
@@ -44,4 +50,90 @@
 
 .md-box {
     width: 30%;
+}
+
+/* Regency */
+.regency {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.image {
+    width: 35vw;
+    height: 15vw;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 50em;
+    object-fit: cover;
+}
+
+.info {
+    max-width: 50%;
+    height: 35em;
+    padding: 2em;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    font-size: 1.25em;
+    width: 35vw;
+    text-align: justify;
+}
+
+.map {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 35em;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map img {
+    width: 95%;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.point:before {
+    font-size: xx-large;
+}
+
+button {
+    padding: 1.5em;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.active {
+    display: flex;
 }
