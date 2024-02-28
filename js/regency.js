@@ -7,6 +7,7 @@ var regency = [
     'alor'
     ]
 var query = document.querySelectorAll('.regency .content');
+var query2 = document.querySelectorAll('.regency-page .hero');
 
 function changeRegency(navigation)
 {
@@ -30,6 +31,17 @@ function changeRegency(navigation)
     selected = regency[index];
 
     query.forEach(function(element) {
+        if (element.classList.contains(selected))
+        {
+            element.classList.add('active');
+        }
+        else
+        {
+            element.classList.remove('active');
+        }
+    });
+
+    query2.forEach(function(element) {
         if (element.classList.contains(selected))
         {
             element.classList.add('active');
