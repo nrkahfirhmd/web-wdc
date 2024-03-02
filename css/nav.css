@@ -16,6 +16,10 @@ nav {
     padding: 0 10%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -31,7 +35,7 @@ li {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #CDCDCD;
+    background-color: white;
     gap: 20px;
     z-index: 1;
     padding: 0 10px;
