@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/wte.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>Kepulauan</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="">Regency</a></li>
+            <li class="hoverable">
+                What To Experience
+                <ul class="wte">
+                    <li><a href="">Pegunungan</a></li>
+                    <li><a href="">Pantai</a></li>
+                    <li><a href="">Kebudayaan</a></li>
+                    <li><a href="">Kepulauan</a></li>
+                </ul>
+            </li>
+            <li><a href="">Travel Tips</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="title">
+            Kepulauan
+        </div>
+        <div class="hero">
+            <div class="prev" onclick="changeContent(3, 'prev')">
+                <p>&#8249;</p>
+            </div>
+            <div class="carousel">
+                <div class="after"></div>
+            </div>
+            <div class="next" onclick="changeContent(3, 'next')">
+                <p>&#x203A;</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="keyword"></div>
+            <div class="artikel">
+                <div class="kiri"></div>
+                <div class="kanan"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+    
+    <script>
+        var after = document.querySelector('.carousel .after');
+            var show = document.querySelector('.hero .carousel');
+
+            after.style.backgroundImage = 'url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/cc/4a/d7/komodo-adala-sala-satu.jpg?w=800&h=-1&s=1)';
+            show.style.backgroundImage = 'url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e6/4a/ed/love-is-what-you-think.jpg?w=1200&h=-1&s=1)';
+    </script>
+    <script src="../js/carousel.js"></script>
+</body>
+</html>
