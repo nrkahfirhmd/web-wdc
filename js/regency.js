@@ -9,6 +9,7 @@ var regency = [
 var query = document.querySelectorAll('.regency .content');
 var query2 = document.querySelectorAll('.regency-page .hero');
 var query3 = document.querySelectorAll('.regency .bg');
+var destinasi = document.querySelectorAll('.destinasi');
 
 function changeRegency(navigation, newIndex)
 {
@@ -65,6 +66,17 @@ function changeRegency(navigation, newIndex)
                 element.classList.remove('active');
             }
         });
+
+        destinasi.forEach(function(element) {
+            if (element.classList.contains(selected))
+            {
+                element.classList.add('content-show');
+            }
+            else
+            {
+                element.classList.remove('content-show');
+            }
+        });
     }
     else
     {
@@ -101,6 +113,17 @@ function changeRegency(navigation, newIndex)
             else
             {
                 element.classList.remove('active');
+            }
+        });
+
+        destinasi.forEach(function(element) {
+            if (element.classList.contains(selected))
+            {
+                element.classList.add('content-show');
+            }
+            else
+            {
+                element.classList.remove('content-show');
             }
         });
     }
