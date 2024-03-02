@@ -1,3 +1,8 @@
+:root {
+    --orange : #FF9209;
+    --minor : #FFD099;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
@@ -16,6 +21,10 @@ nav {
     padding: 0 10%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -31,7 +40,7 @@ li {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #CDCDCD;
+    background-color: white;
     gap: 20px;
     z-index: 1;
     padding: 0 10px;
@@ -52,14 +61,14 @@ li {
     max-height: 200px;
 }
 
-a {
+.menu {
     text-decoration: none;
     color: black;
     position: relative;
     transition: all 1s;
 }
 
-a::after {
+.menu::after {
     content: "";
     width: 0;
     height: 2px;
@@ -70,10 +79,10 @@ a::after {
     transition: all 1s;
 }
 
-a:hover {
+.menu:hover {
     color: brown;
 }
 
-a:hover::after {
+.menu:hover::after {
     width: 100%;
 }

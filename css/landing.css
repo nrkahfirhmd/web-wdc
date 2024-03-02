@@ -12,11 +12,12 @@ main {
 
 .hero {
     display: grid;
+    width: 100%;
 }
 
 .hero-img img {
     object-fit: cover;
-    width: 198vh;
+    width: 100vw;
     height: 77%;
 }
 

@@ -9,46 +9,76 @@ var regency = [
 var query = document.querySelectorAll('.regency .content');
 var query2 = document.querySelectorAll('.regency-page .hero');
 
-function changeRegency(navigation)
+function changeRegency(navigation, newIndex)
 {
-    if (navigation == "next")
+    if (typeof newIndex === 'undefined')
     {
-        index++;
-        if (index >= regency.length)
+        if (navigation == "next")
         {
-            index = 0;
+            index++;
+            if (index >= regency.length)
+            {
+                index = 0;
+            }
         }
+        else 
+        {
+            index--;
+            if (index < 0)
+            {
+                index = regency.length - 1;
+            }
+        }
+
+        selected = regency[index];
+
+        query.forEach(function(element) {
+            if (element.classList.contains(selected))
+            {
+                element.classList.add('active');
+            }
+            else
+            {
+                element.classList.remove('active');
+            }
+        });
+
+        query2.forEach(function(element) {
+            if (element.classList.contains(selected))
+            {
+                element.classList.add('active');
+            }
+            else
+            {
+                element.classList.remove('active');
+            }
+        });
     }
-    else 
+    else
     {
-        index--;
-        if (index < 0)
-        {
-            index = regency.length - 1;
-        }
+        index = newIndex;
+        selected = regency[index];
+
+        query.forEach(function(element) {
+            if (element.classList.contains(selected))
+            {
+                element.classList.add('active');
+            }
+            else
+            {
+                element.classList.remove('active');
+            }
+        });
+
+        query2.forEach(function(element) {
+            if (element.classList.contains(selected))
+            {
+                element.classList.add('active');
+            }
+            else
+            {
+                element.classList.remove('active');
+            }
+        });
     }
-
-    selected = regency[index];
-
-    query.forEach(function(element) {
-        if (element.classList.contains(selected))
-        {
-            element.classList.add('active');
-        }
-        else
-        {
-            element.classList.remove('active');
-        }
-    });
-
-    query2.forEach(function(element) {
-        if (element.classList.contains(selected))
-        {
-            element.classList.add('active');
-        }
-        else
-        {
-            element.classList.remove('active');
-        }
-    });
 }
