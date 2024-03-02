@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+/* landing */
+
 main {
     display: flex;
     flex-direction: column;
@@ -7,52 +9,112 @@ main {
     align-items: center;
 }
 
-.section-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
 }
 
-.hero-left  {
-    width: 30%;
+.hero-img img {
+    object-fit: cover;
+    width: 198vh;
+    height: 77%;
 }
 
-.hero-right {
+.hero-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    gap: 30%;
+}
+
+.hero-content h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 7rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero-img, .hero-content {
+    grid-area: 1/2;
 }
 
 .hero-numbers {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 42rem;
+    background-color: orange;
+    border-radius: 0.8rem;
+}
+
+.hero-numbers h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hero-numbers p {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .sm-box, .md-box {
     color: white;
-    background-color: orange;
-    height: 4rem;
+    height: 6rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    padding: 1rem;
 }
 
 .sm-box {
-    width: 20%;
+    width: 18%;
 }
 
 .md-box {
-    width: 30%;
+    width: 33%;
+}
+
+/* province */
+
+.province-section {
+    width: 75.5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.province-img {
+    width: 36rem;
+}
+
+.province-img img {
+    width: 100%;
+    height: auto;
+}
+
+.province-text {
+    width: 42rem;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5%;
+}
+
+.province-text .box h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: #FF9209;
+    font-weight: 200;
+    font-size: 3.5em;
+    margin-bottom: 1rem;
 }
 
 /* Regency */
+
 .regency {
     width: 80%;
     display: flex;
