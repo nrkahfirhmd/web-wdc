@@ -7,6 +7,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .hero {
@@ -25,7 +26,7 @@ main {
     align-items: center;
     justify-content: center;
     padding-top: 4rem;
-    gap: 30%;
+    gap: 25%;
 }
 
 .hero-content h1 {
@@ -80,10 +81,11 @@ main {
 /* province */
 
 .province-section {
+    margin: 2rem;
     width: 75.5%;
     display: flex;
-    justify-content: space-between;
-    gap: 4rem;
+    justify-content: center;
+    gap: 5%;
 }
 
 .province-img {
@@ -91,13 +93,13 @@ main {
 }
 
 .province-img img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 .province-text {
-    width: 42rem;
-    font-size: 1.25em;
+    width: 45rem;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -109,7 +111,7 @@ main {
     font-family: 'Kaushan Script', cursive;
     color: #FF9209;
     font-weight: 200;
-    font-size: 3.5em;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -198,4 +200,61 @@ button {
 
 .active {
     display: flex;
+}
+
+/* travel tips */
+
+.traveltips-section {
+    width: 75.5%;
+    margin: 2rem;
+}
+
+.tips-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF9209;
+    border-radius: 2rem;
+    color: white;
+    gap: 2rem;
+}
+
+.tips-img {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.tips-img img {
+    border-radius: 2rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.tips-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: start;
+    gap: .2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.tips-button {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0 1rem 1rem 0;
+}
+
+.tips-button button {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    border-radius: 6rem;
+    background-color: white;
+    color: #FF9209;
+    max-height: 1rem;
 }
