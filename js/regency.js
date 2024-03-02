@@ -8,6 +8,7 @@ var regency = [
     ]
 var query = document.querySelectorAll('.regency .content');
 var query2 = document.querySelectorAll('.regency-page .hero');
+var query3 = document.querySelectorAll('.regency .bg');
 
 function changeRegency(navigation, newIndex)
 {
@@ -53,6 +54,17 @@ function changeRegency(navigation, newIndex)
                 element.classList.remove('active');
             }
         });
+
+        query3.forEach(function(element) {
+            if (element.classList.contains(selected))
+            {
+                element.classList.add('active');
+            }
+            else
+            {
+                element.classList.remove('active');
+            }
+        });
     }
     else
     {
@@ -71,6 +83,17 @@ function changeRegency(navigation, newIndex)
         });
 
         query2.forEach(function(element) {
+            if (element.classList.contains(selected))
+            {
+                element.classList.add('active');
+            }
+            else
+            {
+                element.classList.remove('active');
+            }
+        });
+
+        query3.forEach(function(element) {
             if (element.classList.contains(selected))
             {
                 element.classList.add('active');

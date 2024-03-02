@@ -119,20 +119,61 @@ main {
 /* Regency */
 
 .regency {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+}
+
+.bg {
+    display: none;
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+}
+
+.bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.bg.kupang::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Kupang.jpg/1200px-Kupang.jpg);
+    filter: brightness(0.25);
+}
+
+.bg.manggarai-barat::before {
+    background-image: url(https://asset.kompas.com/crops/I2xOtGRVOrtyWhl4kW-uslt4ViM=/59x0:1139x720/750x500/data/photo/2022/07/22/62da623fe5b34.jpeg);
+    filter: brightness(0.25);
+}
+
+.bg.manggarai-timur::before {
+    background-image: url(https://asset.kompas.com/crops/VJNz6nBkYshUJ5qCIeqzDR1ror8=/0x0:0x0/750x500/data/photo/2022/05/10/6279bdc54f53f.jpg);
+    filter: brightness(0.25);
+}
+
+.bg.sikka::before {
+    background-image: url(https://atourin.obs.ap-southeast-3.myhuaweicloud.com/images/wilayah/sikka-1638766010.png?x-image-process=image/resize,p_100,limit_1/imageslim);
+    filter: brightness(0.25);
+}
+
+.bg.alor::before {
+    background-image: url(https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2022/12/29/1452602256.jpg);
+    filter: brightness(0.25);
 }
 
 .name {
     font-size: 3em;
-    font-weight: bold;
+    font-family: 'Kaushan Script', sans-serif;
+    color: var(--orange);
 }
 
 .image {
     width: 35vw;
-    height: 15vw;
+    height: 15em;
     overflow: hidden;
     border-radius: 20px;
     display: flex;
@@ -155,9 +196,10 @@ main {
 
 .content {
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .desc {
@@ -173,34 +215,80 @@ main {
     border-radius: 33px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .map img {
-    width: 95%;
+    width: 90%;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.prev:before {
+    content: "<";
+    font-size: xx-large;
+}
+
+.next::before {
+    content: ">";
+    font-size: xx-large;
 }
 
 .button {
     width: 100%;
     display: flex;
-    justify-content: end;
     gap: 15px;
-}
-
-.point:before {
-    font-size: xx-large;
+    justify-content: end;
 }
 
 button {
-    padding: 1.5em;
+    width: 5em;
+    height: 5em;
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    background-color: gray;
+    background-color: var(--orange);
 }
 
 .active {
     display: flex;
+}
+
+.selengkapnya {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 1.5em;
+}
+
+.dot {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: var(--minor);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.point-select {
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    background-color: var(--orange);
 }
 
 /* travel tips */
