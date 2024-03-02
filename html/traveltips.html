@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/traveltips.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <title>Travel Tips</title>
 </head>
 <body>
     <nav>
-
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="" class="menu">Regency</a></li>
+            <li class="hoverable">
+                What To Experience
+                <ul class="wte">
+                    <li><a href="" class="menu">Pegunungan</a></li>
+                    <li><a href="" class="menu">Pantai</a></li>
+                    <li><a href="" class="menu">Kebudayaan</a></li>
+                    <li><a href="" class="menu">Kepulauan</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="menu">Travel Tips</a></li>
+            <li><a href="" class="menu">About Us</a></li>
+        </ul>
     </nav>
 
     <main>
@@ -112,5 +127,19 @@
     <footer>
 
     </footer>
+
+    <script>
+        var dropButtons = document.querySelectorAll('.drop');
+
+        dropButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var faqHeader = this.parentElement;
+                faqHeader.classList.toggle('active');
+
+                var box = faqHeader.parentElement;
+                box.classList.toggle('clicked');
+            })
+        })
+    </script>
 </body>
 </html>
