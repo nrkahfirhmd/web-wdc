@@ -1,4 +1,10 @@
-var pegunungan = []
+var pegunungan = [
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/26/52/0f/20180813-102709-largejpg.jpg?w=1000&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4b/e7/9f/view-from-the-summit.jpg?w=1100&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/cf/d4/14/img-20180926-181431-020.jpg?w=1100&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/4f/93/bb/photo0jpg.jpg?w=1200&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/b7/a3/f5/0707181635-hdr-largejpg.jpg?w=1100&h=-1&s=1'
+]
 var pantai = []
 var kebudayaan = []
 var kepulauan = [
@@ -9,7 +15,13 @@ var kepulauan = [
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/22/73/09/rinca-island-from-the.jpg?w=1200&h=-1&s=1'
 ]
 
-var nPegunungan = []
+var nPegunungan = [
+    'kelimutu',
+    'inerie',
+    'egon',
+    'wolobobo',
+    'ebulobo'
+]
 var nPantai = []
 var nKebudayaan = []
 var nKepulauan = [
