@@ -12,7 +12,13 @@ var pantai = [
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/dc/d4/5c/nikmatnya-pantai-nan.jpg?w=1200&h=-1&s=1',
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d6/71/17/that-dancing-tree.jpg?w=1200&h=-1&s=1'
 ]
-var kebudayaan = []
+var kebudayaan = [
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/eb/c8/71/charming.jpg?w=1200&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/2e/56/a3/bena-traditional-village.jpg?w=600&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/76/8d/63/kampung-tarung.jpg?w=1200&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6a/02/ae/praijing-cultural-village.jpg?w=900&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/84/db/d4/ngada.jpg?w=800&h=-1&s=1'
+]
 var kepulauan = [
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/cc/4a/d7/komodo-adala-sala-satu.jpg?w=800&h=-1&s=1',
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e6/4a/ed/love-is-what-you-think.jpg?w=1200&h=-1&s=1',
@@ -35,7 +41,13 @@ var nPantai = [
     'nemberala',
     'walakiri'
 ]
-var nKebudayaan = []
+var nKebudayaan = [
+    'wae-rebo',
+    'bena',
+    'tarung',
+    'praijing',
+    'ngada'
+]
 var nKepulauan = [
     'komodo',
     'padar',
