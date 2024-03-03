@@ -63,7 +63,7 @@ main {
 .carousel { 
     width: 80%;
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(200, 200, 200);
     position: relative;
     background-size: cover;
     background-position: center;
@@ -79,7 +79,7 @@ main {
     left: 0;
     top: 0;
     position: absolute;
-    background-color: khaki;
+    background-color: rgb(200, 200, 200);
     background-size: cover;
     background-position: center;
 }

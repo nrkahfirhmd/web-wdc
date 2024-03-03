@@ -5,7 +5,13 @@ var pegunungan = [
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/4f/93/bb/photo0jpg.jpg?w=1200&h=-1&s=1',
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/b7/a3/f5/0707181635-hdr-largejpg.jpg?w=1100&h=-1&s=1'
 ]
-var pantai = []
+var pantai = [
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a9/ee/30/pink-beach-dans-le-komodo.jpg?w=1200&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/d1/97/3c/nihiwatu-beach-2.jpg?w=1200&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/63/bf/8b/photo2jpg.jpg?w=1200&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/dc/d4/5c/nikmatnya-pantai-nan.jpg?w=1200&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d6/71/17/that-dancing-tree.jpg?w=1200&h=-1&s=1'
+]
 var kebudayaan = []
 var kepulauan = [
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/cc/4a/d7/komodo-adala-sala-satu.jpg?w=800&h=-1&s=1',
@@ -22,7 +28,13 @@ var nPegunungan = [
     'wolobobo',
     'ebulobo'
 ]
-var nPantai = []
+var nPantai = [
+    'pink',
+    'nihiwatu',
+    'koka',
+    'nemberala',
+    'walakiri'
+]
 var nKebudayaan = []
 var nKepulauan = [
     'komodo',
