@@ -20,9 +20,10 @@ body {
     font-weight: bold;
     background-color: white;
     width: 100%;
-    background-image: url(https://media.discordapp.net/attachments/736596584212725822/1212328880979845120/Frame_8484_3.png?ex=65f17041&is=65defb41&hm=fe911776e300136b0b06c804e1e5f6f6c99150565791424f2a5aa2a0bc26099f&=&format=webp&quality=lossless&width=525&height=350);
+    background-image: url(https://media.discordapp.net/attachments/736596584212725822/1213971934170062888/Frame_8484.png?ex=65f76a77&is=65e4f577&hm=0658f1d7c916f196e82abae22decd4ecc40666ffa32baa454b5d9a00d2b8db74&=&format=webp&quality=lossless&width=525&height=350);
     background-size: cover;
     background-position: center;
+    color: var(--orange);
 }
 
 .background {
@@ -43,10 +44,13 @@ body {
 
 h1 {
     font-size: 4em;
+    font-family: var(--kaushan);
+    color: orange;
 }
 
 p {
     font-size: 1.5em;
+    line-height: 1.5;
 }
 
 .fotbar {
@@ -63,6 +67,11 @@ p {
     width: 50rem;
     height: 25rem;
     object-fit: cover;
+    transition: all 1s;
+}
+
+.fotbar:hover img {
+    transform: scale(1.2);
 }
 
 .member {
@@ -104,18 +113,22 @@ p {
 }
 
 .personal .image {
-    width: 100%;
+    width: 90%;
     height: 30em;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .image img {
-    width: 25em;
-    height: 30em;
     object-fit: cover;
-    border-radius: 20px;
+    transition: all 1s;
+}
+
+.image:hover img {
+    transform: scale(1.5);
 }
 
 .links {
@@ -125,12 +138,17 @@ p {
 }
 
 .links a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .links img {
     width: 3em;
     height: 3em;
+    transition: all 0.5s;
+}
+
+.links img:hover {
+    transform: scale(1.2);
 }
 
 footer {

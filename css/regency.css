@@ -68,6 +68,11 @@ main {
 .image img {
     width: 50em;
     object-fit: cover;
+    transition: all 1s;
+}
+
+.image:hover img {
+    transform: scale(1.2);
 }
 
 .info {
