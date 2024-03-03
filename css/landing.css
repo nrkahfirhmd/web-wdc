@@ -8,6 +8,7 @@ main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    gap: 8em;
 }
 
 .hero {
@@ -82,7 +83,7 @@ main {
 /* province */
 
 .province-section {
-    margin: 2rem;
+    margin: -8rem 0 0 0;
     width: 75.5%;
     display: flex;
     justify-content: center;
@@ -346,6 +347,42 @@ button {
     background-color: white;
     color: #FF9209;
     max-height: 1rem;
+}
+
+/* What To Experience */
+.what-to-experience {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.showroom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    height: 100%;
+}
+
+.what-to-experience h1 {
+    color: var(--orange);
+    font-size: 3em;
+}
+
+.showroom .box {
+    background-color: rgb(200, 200, 200);
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    border-radius: 25px;
+    padding: 0.5em;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Kata Mereka */
