@@ -9,9 +9,22 @@ var kepulauan = [
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/22/73/09/rinca-island-from-the.jpg?w=1200&h=-1&s=1'
 ]
 
+var nPegunungan = []
+var nPantai = []
+var nKebudayaan = []
+var nKepulauan = [
+    'komodo',
+    'padar',
+    'kelor',
+    'kanawa',
+    'rinca'
+]
+
 var image = []
+var nama = []
 var after = document.querySelector('.carousel .after');
 var show = document.querySelector('.hero .carousel');
+var content = document.querySelectorAll('main .content');
 var prev = image.length - 1;
 var index = 0;
 
@@ -20,15 +33,19 @@ function changeContent(identifier, navigation)
     switch (identifier) {
         case 0:
             image = pegunungan;
+            nama = nPegunungan;
             break;
         case 1:
             image = pantai;
+            nama = nPantai;
             break;
         case 2:
             image = kebudayaan;
+            nama = nKebudayaan;
             break;
         case 3:
             image = kepulauan;
+            nama = nKepulauan;
             break;
         default:
             break;
@@ -46,6 +63,7 @@ function changeContent(identifier, navigation)
         
         placeholder = image[prev];
         current = image[index];
+        isi = nama[index];
 
         after.style.backgroundImage = 'url(' + placeholder + ')';
         show.style.backgroundImage = 'url(' + current + ')';
@@ -56,6 +74,15 @@ function changeContent(identifier, navigation)
             after.style.backgroundImage = 'url(' + current + ')';
             after.classList.remove('slide-right')
         }, 200)
+
+        content.forEach(function(element) {
+            if (element.classList.contains(isi)) {
+                element.classList.add('active');
+            }
+            else {
+                element.classList.remove('active');
+            }
+        });
     }
     else
     {
@@ -69,6 +96,7 @@ function changeContent(identifier, navigation)
 
         placeholder = image[prev];
         current = image[index];
+        isi = nama[index];
         
         after.style.backgroundImage = 'url(' + current + ')';
         show.style.backgroundImage = 'url(' + placeholder + ')';
@@ -78,5 +106,14 @@ function changeContent(identifier, navigation)
         setTimeout(function() {
             after.classList.remove('slide-left')
         }, 250)
+
+        content.forEach(function(element) {
+            if (element.classList.contains(isi)) {
+                element.classList.add('active');
+            }
+            else {
+                element.classList.remove('active');
+            }
+        });
     }
 }
