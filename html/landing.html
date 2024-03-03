@@ -309,6 +309,60 @@
             </div>
         </section>
 
+        <section class="faq">
+            <div class="header-wrapper">
+                <h3>FAQ</h2>
+                <h4>Frequently Asked Question</h4>
+            </div>
+            <div class="faqs">
+                <div class="faq-box">
+                    <div class="faq-header">
+                        <h2>Ada transportasi online gak di sana?</h2>
+                        <button class="drop">&cudarrr;</button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Ada! Pasukan hijau sudah hadir di sini.</p>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-header">
+                        <h2>Bisa pesen makanan gak ya?</h2>
+                        <button class="drop">&cudarrr;</button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Tentu saja! Restoran lokal sudah bersiap untuk melayani delivery secara online</p>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-header">
+                        <h2>Bahasa apa yang dipakai di sana?</h2>
+                        <button class="drop">&cudarrr;</button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Masyarakat lokal biasanya menggunakan Bahasa Kupang, tetapi Bahasa Indonesia pasti dimengerti</p>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-header">
+                        <h2>Apakah NTT cocok untuk keluarga?</h2>
+                        <button class="drop">&cudarrr;</button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Sangat cocok! Sesuaikan destinasi dengan umur dan preferensi keluarga anda</p>
+                    </div>
+                </div>
+                <div class="faq-box">
+                    <div class="faq-header">
+                        <h2>Apakah di sana banyak Wi-Fi?</h2>
+                        <button class="drop">&cudarrr;</button>
+                    </div>
+                    <div class="faq-content">
+                        <p>Banyak! Kebanyakan penginapan di destinasi wisata sudah memfasilitasi Wi-Fi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="review">
             <div class="header-wrapper">
                 <h1>Kata Mereka</h1>
@@ -412,6 +466,19 @@
         </div>
     </footer>
 
+    <script>
+        var dropButtons = document.querySelectorAll('.drop');
+
+        dropButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var faqHeader = this.parentElement;
+                faqHeader.classList.toggle('active');
+
+                var box = faqHeader.parentElement;
+                box.classList.toggle('clicked');
+            })
+        })
+    </script>
     <script src="../js/regency.js"></script>
     <script src="../js/review.js"></script>
 </body>

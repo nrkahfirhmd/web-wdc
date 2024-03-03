@@ -385,6 +385,111 @@ button {
     background-size: cover;
 }
 
+/* FAQ */
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0 2rem 0;
+    padding: 4rem 0;
+    width: 100%;
+    height: max-content;
+    background-image: url(https://media.discordapp.net/attachments/1091347000940826634/1213853361372405790/image_15.png?ex=65f6fc09&is=65e48709&hm=b46a4c6ee83a30255b98d466c8ac9dfdc8ec3d07e3f6037cc4612917e6161016&=&format=webp&quality=lossless&width=1102&height=671);
+    background-size: cover;
+    gap: 4em;
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .8rem;
+    padding: 2em;
+    gap: 15px;
+    width: 80%;
+}
+
+.faq-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 3rem 2rem 1rem 2rem;
+    width: 100%;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    max-height: 3em;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.faq-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.faq-header button {
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    transition: 100ms;
+}
+
+.faq-header button:hover {
+    font-size: 2.4rem;
+    transition: 500ms;
+}
+
+.faq-header button:active {
+    font-size: 2.4rem;
+    color: var(--orange);
+    transition: 50ms;
+}
+
+.faq-content {
+    transition: all 0.5s;
+    opacity: 0;
+    width: 100%;
+    position: relative;
+    transform: translateY(-2em);
+    font-size: 1.25em;
+}
+
+.faq-header.active + .faq-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.faq-header.active .drop {
+    transform: rotate(180deg);
+}
+
+.faq-box.clicked {
+    max-height: 10em;
+    padding: 2rem;
+}
+
+.faq h3 {
+    color: var(--orange);
+    font-size: 6em;
+}
+
+.faq h4 {
+    color: var(--orange);
+    font-size: 2em;
+}
+
 /* Kata Mereka */
 
 .review {
