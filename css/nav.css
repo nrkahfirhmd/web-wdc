@@ -72,7 +72,7 @@ li {
     content: "";
     width: 0;
     height: 2px;
-    background-color: brown;
+    background-color: var(--orange);
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -80,7 +80,7 @@ li {
 }
 
 .menu:hover {
-    color: brown;
+    color: var(--orange);
 }
 
 .menu:hover::after {

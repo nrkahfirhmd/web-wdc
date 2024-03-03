@@ -348,6 +348,126 @@ button {
     max-height: 1rem;
 }
 
+/* Kata Mereka */
+
+.review {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF3E1;
+    gap: 30px;
+    padding: 4em 0 ;
+}
+
+.header-wrapper {
+    text-align: center;
+}
+
+.review h1 {
+    font-size: 4em;
+}
+
+.review h3 {
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+.review .card {
+    width: 80vw;
+    height: auto;
+    background-color: var(--orange);
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 10rem;
+    gap: 10px;
+    flex: 1;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 20px;
+    color: white;
+}
+
+.card-wrapper {
+    width: 250%;
+    overflow-x: hidden;
+    display: flex;
+    gap: 10px;
+    transition: all 1s;
+    transform: translateX(80vw);
+    position: relative;
+}
+
+.review .image {
+    width: 15em;
+    height: 15em;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-wrapper {
+    display: grid;
+    grid-template-rows: 3fr 7fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.direction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.direction .bullet {
+    display: flex;
+    gap: 7px;
+}
+
+.direction .navigation {
+    width: auto;
+    cursor: pointer;
+}
+
+.navigation > * {
+    border: 1px solid black;
+    padding: 0.75em;
+    border-radius: 500px;
+}
+
+.navigation p {
+    font-size: 1.5em;
+}
+
+.review .dot {
+    cursor: auto;
+}
+
+.person-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 3em;
+    align-items: center;
+}
+
+.review-content {
+    font-size: 2em;
+}
+
+.person-info .dot {
+    background-color: white;
+    width: 0.5em;
+    height: 0.5em;
+    aspect-ratio: 1 / 1;
+}
+
 /* footer */
 footer {
     margin: 2rem;
