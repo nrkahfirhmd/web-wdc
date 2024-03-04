@@ -37,7 +37,8 @@ main {
     text-align: center;
 }
 
-.hero-img, .hero-content {
+.hero-img,
+.hero-content {
     grid-area: 1/2;
 }
 
@@ -48,7 +49,6 @@ main {
     width: 42rem;
     background-color: orange;
     border-radius: 0.8rem;
-    cursor: default;
 }
 
 .hero-numbers h2 {
@@ -61,7 +61,8 @@ main {
     font-weight: 400;
 }
 
-.sm-box, .md-box {
+.sm-box,
+.md-box {
     color: white;
     height: 6rem;
     display: flex;
@@ -185,8 +186,10 @@ main {
     object-fit: cover;
     transition: all 1s;
     user-select: none;
-    -webkit-user-drag: none; /* For Safari */
-    -webkit-touch-callout: none; /* For Safari */
+    -webkit-user-drag: none;
+    /* For Safari */
+    -webkit-touch-callout: none;
+    /* For Safari */
 }
 
 .image:hover img {
@@ -231,8 +234,10 @@ main {
 .map img {
     width: 90%;
     user-select: none;
-    -webkit-user-drag: none; /* For Safari */
-    -webkit-touch-callout: none; /* For Safari */
+    -webkit-user-drag: none;
+    /* For Safari */
+    -webkit-touch-callout: none;
+    /* For Safari */
 }
 
 .navigation {
@@ -370,24 +375,6 @@ button {
     border-radius: 6rem;
     background-color: white;
     color: #FF9209;
-    width: 6rem;
-    height: 2rem;
-    justify-content: center;
-    transition: 150ms;
-}
-
-.tips-button button:hover {
-    background-color: #FF9209;
-    border: 5px solid white;
-    a {
-        color: white;
-    }
-    transition: 150ms;
-}
-
-.tips-button button a {
-    text-decoration: none;
-    color: #FF9209;
     max-height: 1rem;
     width: 100%;
     padding: 1.5em;
@@ -519,7 +506,7 @@ button {
     font-size: 1.25em;
 }
 
-.faq-header.active + .faq-content {
+.faq-header.active+.faq-content {
     transform: translateY(0);
     opacity: 1;
 }
@@ -553,7 +540,7 @@ button {
     align-items: center;
     background-color: #FFF3E1;
     gap: 30px;
-    padding: 4em 0 ;
+    padding: 4em 0;
 }
 
 .header-wrapper {
@@ -629,7 +616,7 @@ button {
     cursor: pointer;
 }
 
-.review .navigation > * {
+.review .navigation>* {
     border: 1px solid black;
     padding: 0.75em;
     border-radius: 500px;

@@ -14,13 +14,21 @@
     font-family: 'Inter', sans-serif;
 }
 
+.logo {
+    width: 8em;
+}
+
+.logo img {
+    width: 100%;
+}
+
 nav {
     height: 5em;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 3rem 10%;
 }
 
 body {
@@ -49,7 +57,7 @@ li {
     overflow: hidden;
     max-height: 0;
     width: 100%;
-    transition: max-height 200ms, padding 200ms;
+    transition: max-height 500ms, padding 500ms;
 }
 
 .hoverable {
@@ -68,7 +76,7 @@ li {
     text-decoration: none;
     color: black;
     position: relative;
-    transition: all 100ms;
+    transition: all 500ms;
 }
 
 .menu::after {
@@ -79,7 +87,7 @@ li {
     position: absolute;
     left: 0;
     bottom: -4px;
-    transition: all 100ms;
+    transition: all 500ms;
 }
 
 .menu:hover {
