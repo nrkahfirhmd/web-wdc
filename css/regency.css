@@ -197,7 +197,7 @@ button {
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    filter: brightness(0.8);
+    color: white;
 }
 
 .kupang .gallery {
@@ -224,10 +224,6 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-}
-
-.kupang .gallery .one {
-    filter: brightness(0.5);
 }
 
 .manggarai-barat .gallery {

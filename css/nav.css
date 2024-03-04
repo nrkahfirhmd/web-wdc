@@ -49,12 +49,13 @@ li {
     overflow: hidden;
     max-height: 0;
     width: 100%;
-    transition: max-height 1s, padding 1s;
+    transition: max-height 200ms, padding 200ms;
 }
 
 .hoverable {
     gap: 10px;
     position: relative;
+    cursor: default;
 }
 
 .hoverable:hover .wte {
@@ -67,7 +68,7 @@ li {
     text-decoration: none;
     color: black;
     position: relative;
-    transition: all 1s;
+    transition: all 100ms;
 }
 
 .menu::after {
@@ -78,7 +79,7 @@ li {
     position: absolute;
     left: 0;
     bottom: -4px;
-    transition: all 1s;
+    transition: all 100ms;
 }
 
 .menu:hover {

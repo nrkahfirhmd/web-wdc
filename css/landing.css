@@ -48,6 +48,7 @@ main {
     width: 42rem;
     background-color: orange;
     border-radius: 0.8rem;
+    cursor: default;
 }
 
 .hero-numbers h2 {
@@ -344,7 +345,24 @@ button {
     border-radius: 6rem;
     background-color: white;
     color: #FF9209;
-    max-height: 1rem;
+    width: 6rem;
+    height: 2rem;
+    justify-content: center;
+    transition: 150ms;
+}
+
+.tips-button button:hover {
+    background-color: #FF9209;
+    border: 5px solid white;
+    a {
+        color: white;
+    }
+    transition: 150ms;
+}
+
+.tips-button button a {
+    text-decoration: none;
+    color: #FF9209;
 }
 
 /* What To Experience */
