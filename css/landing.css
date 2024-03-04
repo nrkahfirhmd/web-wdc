@@ -182,6 +182,10 @@ main {
 .image img {
     width: 50em;
     object-fit: cover;
+    transition: all 1s;
+    user-select: none;
+    -webkit-user-drag: none; /* For Safari */
+    -webkit-touch-callout: none; /* For Safari */
 }
 
 .info {
@@ -221,6 +225,9 @@ main {
 
 .map img {
     width: 90%;
+    user-select: none;
+    -webkit-user-drag: none; /* For Safari */
+    -webkit-touch-callout: none; /* For Safari */
 }
 
 .navigation {
@@ -258,6 +265,7 @@ button {
 
 .active {
     display: flex;
+    user-select: none;
 }
 
 .selengkapnya {
