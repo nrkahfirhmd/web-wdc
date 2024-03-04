@@ -10,6 +10,14 @@ var query = document.querySelectorAll('.regency .content');
 var query2 = document.querySelectorAll('.regency-page .hero');
 var query3 = document.querySelectorAll('.regency .bg');
 var destinasi = document.querySelectorAll('.destinasi');
+var swipeDiv = document.querySelector('.regency-page .hero.active');
+
+var startX;
+var startY;
+var distX;
+var distY;
+var threshold = 100;
+var allowedTime = 300;
 
 function changeRegency(navigation, newIndex)
 {
@@ -77,6 +85,8 @@ function changeRegency(navigation, newIndex)
                 element.classList.remove('content-show');
             }
         });
+
+        swipeDiv = document.querySelector('.regency-page .hero.active');
     }
     else
     {
@@ -126,5 +136,99 @@ function changeRegency(navigation, newIndex)
                 element.classList.remove('content-show');
             }
         });
+
+        swipeDiv = document.querySelector('.regency-page .hero.active');
     }
 }
+
+query2.forEach(function(element) {
+    element.addEventListener('mousedown', function(e) {
+        startX = e.clientX;
+        startY = e.clientY;
+    });
+
+    element.addEventListener('mouseup', function(e) {
+        distX = e.clientX - startX;
+        distY = e.clientY - startY;
+        if (Math.abs(distX) >= threshold && Math.abs(distY) <= 100) {
+            if (distX > 0) {
+                changeRegency('previous');
+            } else {
+                changeRegency('next');
+            }
+        }
+    });
+
+    element.addEventListener('touchstart', function(e) {
+        var touchObj = e.changedTouches[0];
+        startX = touchObj.pageX;
+        startY = touchObj.pageY;
+        startTime = new Date().getTime();
+    }, false);
+
+    element.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, false);
+
+    element.addEventListener('touchend', function(e) {
+        var touchObj = e.changedTouches[0];
+        distX = touchObj.pageX - startX;
+        distY = touchObj.pageY - startY;
+        var elapsedTime = new Date().getTime() - startTime;
+        if (elapsedTime <= allowedTime) {
+            if (Math.abs(distX) >= threshold && Math.abs(distY) <= 100) {
+                if (distX > 0) {
+                    changeRegency('prev');
+                } else {
+                    changeRegency('next');
+                }
+            }
+        }
+    }, false);
+});
+
+query3.forEach(function(element) {
+    element.addEventListener('mousedown', function(e) {
+        startX = e.clientX;
+        startY = e.clientY;
+    });
+
+    element.addEventListener('mouseup', function(e) {
+        distX = e.clientX - startX;
+        distY = e.clientY - startY;
+        if (Math.abs(distX) >= threshold && Math.abs(distY) <= 100) {
+            if (distX > 0) {
+                changeRegency('previous');
+            } else {
+                changeRegency('next');
+            }
+        }
+    });
+
+    element.addEventListener('touchstart', function(e) {
+        var touchObj = e.changedTouches[0];
+        startX = touchObj.pageX;
+        startY = touchObj.pageY;
+        startTime = new Date().getTime();
+    }, false);
+
+    element.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, false);
+
+    element.addEventListener('touchend', function(e) {
+        var touchObj = e.changedTouches[0];
+        distX = touchObj.pageX - startX;
+        distY = touchObj.pageY - startY;
+        var elapsedTime = new Date().getTime() - startTime;
+        if (elapsedTime <= allowedTime) {
+            if (Math.abs(distX) >= threshold && Math.abs(distY) <= 100) {
+                if (distX > 0) {
+                    changeRegency('prev');
+                } else {
+                    changeRegency('next');
+                }
+            }
+        }
+    }, false);
+});

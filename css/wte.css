@@ -56,7 +56,12 @@ main {
     border-radius: 5em;
     cursor: pointer;
     user-select: none;
+    transition: all 1s;
 }   
+
+.prev p:hover, .next p:hover {
+    transform: scale(1.25);
+}
 
 .carousel { 
     width: 80%;
@@ -65,6 +70,7 @@ main {
     position: relative;
     background-size: cover;
     background-position: center;
+    border-radius: 50px;
     /* overflow-y: hidden; */
     /* display: flex;
     justify-content: center;
@@ -80,6 +86,7 @@ main {
     background-color: rgb(200, 200, 200);
     background-size: cover;
     background-position: center;
+    border-radius: 50px;
 }
 
 .slide-right {
@@ -133,7 +140,7 @@ main {
 .artikel {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
+    gap: 30px;
 }
 
 .left-a {
@@ -166,6 +173,11 @@ main {
     object-fit: cover;
     width: 30vw;
     aspect-ratio: 1 / 1;
+    transition: all 1s;
+}
+
+.img:hover img {
+    transform: scale(1.5);
 }
 
 .nama {
@@ -177,7 +189,7 @@ main {
 .keyword {
     font-size: 1.25em;
     font-style: italic;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .text {
@@ -192,4 +204,8 @@ main {
     font-family: 'Kaushan Script', sans-serif;
     color: var(--orange);
     font-weight: normal;
+}
+
+.artikel p {
+    line-height: 1.5;
 }

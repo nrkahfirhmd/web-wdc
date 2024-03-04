@@ -183,6 +183,14 @@ main {
 .image img {
     width: 50em;
     object-fit: cover;
+    transition: all 1s;
+    user-select: none;
+    -webkit-user-drag: none; /* For Safari */
+    -webkit-touch-callout: none; /* For Safari */
+}
+
+.image:hover img {
+    transform: scale(1.2);
 }
 
 .info {
@@ -222,6 +230,9 @@ main {
 
 .map img {
     width: 90%;
+    user-select: none;
+    -webkit-user-drag: none; /* For Safari */
+    -webkit-touch-callout: none; /* For Safari */
 }
 
 .navigation {
@@ -259,6 +270,7 @@ button {
 
 .active {
     display: flex;
+    user-select: none;
 }
 
 .selengkapnya {
@@ -305,17 +317,24 @@ button {
     border-radius: 2rem;
     color: white;
     gap: 2rem;
+    height: 25vh;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.tips-box:hover {
+    transform: scale(1.1);
 }
 
 .tips-img {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
-    height: auto;
+    border-radius: 2rem;
+    overflow: hidden;
 }
 
 .tips-img img {
-    border-radius: 2rem;
     object-fit: cover;
     width: 100%;
 }
@@ -328,7 +347,7 @@ button {
     align-items: start;
     gap: .2rem;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.74rem;
 }
 
 .tips-button {
@@ -336,6 +355,12 @@ button {
     justify-content: end;
     align-items: end;
     padding: 0 1rem 1rem 0;
+    transition: all 1s;
+}
+
+.tips-button button:hover {
+    background-color: var(--minor);
+    color: white;
 }
 
 .tips-button button {
@@ -345,6 +370,7 @@ button {
     border-radius: 6rem;
     background-color: white;
     color: #FF9209;
+<<<<<<< HEAD
     width: 6rem;
     height: 2rem;
     justify-content: center;
@@ -363,6 +389,11 @@ button {
 .tips-button button a {
     text-decoration: none;
     color: #FF9209;
+=======
+    max-height: 1rem;
+    width: 100%;
+    padding: 1.5em;
+>>>>>>> 35f46f33f98a60d162b0f7fc7c43e82e2b3a8d6c
 }
 
 /* What To Experience */
@@ -399,6 +430,14 @@ button {
     align-items: end;
     background-position: center;
     background-size: cover;
+    transition: all 1s;
+}
+
+.showroom .box:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 13px 3px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    color: orange;
 }
 
 /* FAQ */
@@ -450,6 +489,7 @@ button {
     width: 100%;
     background-color: white;
     z-index: 1;
+    cursor: pointer;
 }
 
 .faq-header button {
