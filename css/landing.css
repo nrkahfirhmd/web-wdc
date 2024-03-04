@@ -370,7 +370,6 @@ button {
     border-radius: 6rem;
     background-color: white;
     color: #FF9209;
-<<<<<<< HEAD
     width: 6rem;
     height: 2rem;
     justify-content: center;
@@ -389,11 +388,9 @@ button {
 .tips-button button a {
     text-decoration: none;
     color: #FF9209;
-=======
     max-height: 1rem;
     width: 100%;
     padding: 1.5em;
->>>>>>> 35f46f33f98a60d162b0f7fc7c43e82e2b3a8d6c
 }
 
 /* What To Experience */
@@ -664,70 +661,4 @@ button {
     width: 0.5em;
     height: 0.5em;
     aspect-ratio: 1 / 1;
-}
-
-/* footer */
-footer {
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-content {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    text-align: start;
-    line-height: 2rem;
-}
-
-.footer-box a {
-    color: black;
-    font-size: 1.1rem;
-    text-decoration: none;
-}
-
-.footer-box a:hover {
-    text-decoration: underline;
-}
-
-.footer-box h2 {
-    margin-bottom: 1rem;
-}
-
-.footer-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
-    gap: 2rem;
-    padding: .4rem;
-}
-
-.footer-nav a {
-    color: black;
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: 900;
-}
-
-.footer-nav a:hover {
-    text-decoration: underline;
-}
-
-.footer-copyright {
-    width: 80%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    color: gray;
 }
