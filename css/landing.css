@@ -188,6 +188,10 @@ main {
     -webkit-touch-callout: none; /* For Safari */
 }
 
+.image:hover img {
+    transform: scale(1.2);
+}
+
 .info {
     max-width: 50%;
     height: 35em;
@@ -312,17 +316,24 @@ button {
     border-radius: 2rem;
     color: white;
     gap: 2rem;
+    height: 25vh;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.tips-box:hover {
+    transform: scale(1.1);
 }
 
 .tips-img {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
-    height: auto;
+    border-radius: 2rem;
+    overflow: hidden;
 }
 
 .tips-img img {
-    border-radius: 2rem;
     object-fit: cover;
     width: 100%;
 }
@@ -335,7 +346,7 @@ button {
     align-items: start;
     gap: .2rem;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.74rem;
 }
 
 .tips-button {
@@ -343,6 +354,12 @@ button {
     justify-content: end;
     align-items: end;
     padding: 0 1rem 1rem 0;
+    transition: all 1s;
+}
+
+.tips-button button:hover {
+    background-color: var(--minor);
+    color: white;
 }
 
 .tips-button button {
@@ -353,6 +370,8 @@ button {
     background-color: white;
     color: #FF9209;
     max-height: 1rem;
+    width: 100%;
+    padding: 1.5em;
 }
 
 /* What To Experience */
@@ -389,6 +408,14 @@ button {
     align-items: end;
     background-position: center;
     background-size: cover;
+    transition: all 1s;
+}
+
+.showroom .box:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 13px 3px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    color: orange;
 }
 
 /* FAQ */
@@ -440,6 +467,7 @@ button {
     width: 100%;
     background-color: white;
     z-index: 1;
+    cursor: pointer;
 }
 
 .faq-header button {

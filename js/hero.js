@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (i <= 22) {
             kabupaten_kota.textContent = i;
             i++;
-            setTimeout(animateKabupatenKota, 35); 
+            setTimeout(animateKabupatenKota, 100); 
         }
     }
 
     function animatePenduduk() {
         if (j <= 5466000) {
             penduduk.textContent = formatNumberWithDot(j) + '+';
-            j += 30000; 
-            setTimeout(animatePenduduk, 1);
+            j += 10000; 
+            setTimeout(animatePenduduk, 0.5);
         }
     }
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (k <= 1192) {
             pulau.textContent = formatNumberWithDot(k);
             k += 8;
-            setTimeout(animatePulau, 1); 
+            setTimeout(animatePulau, 15); 
         }
     }
 

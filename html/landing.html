@@ -277,9 +277,9 @@
         </section>
 
         <section class="traveltips-section">
-            <div class="tips-box">
+            <a href="" class="tips-box">
                 <div class="tips-img">
-                    <img src="https://cdn.discordapp.com/attachments/1091347000940826634/1213363286230302720/Rectangle_4631.png?ex=65f5339e&is=65e2be9e&hm=8e9ae050473858b46baeea6c98ccad36a17ea1d5a33533e94d479201237df4b4&" alt="">
+                    <img src="https://media.discordapp.net/attachments/736596584212725822/1214103469494108202/Rectangle_4631.png?ex=65f7e4f8&is=65e56ff8&hm=701d958fd6b93167ecadf86451d295ba17b5d8ab98d2dd55b94fa9e9526e3552&=&format=webp&quality=lossless&width=785&height=468" alt="">
                 </div>
                 <div class="tips-text">
                     <p>For Good Travel Experience</p>
@@ -288,7 +288,7 @@
                 <div class="tips-button">
                     <button>Read More</button>
                 </div>
-            </div>
+            </a>
         </section>
 
         <section class="what-to-experience">
@@ -468,6 +468,7 @@
 
     <script>
         var dropButtons = document.querySelectorAll('.drop');
+        var header = document.querySelectorAll('.faq-header');
 
         dropButtons.forEach(function (button) {
             button.addEventListener('click', function () {
@@ -475,6 +476,15 @@
                 faqHeader.classList.toggle('active');
 
                 var box = faqHeader.parentElement;
+                box.classList.toggle('clicked');
+            })
+        })
+
+        header.forEach(function (element) {
+            element.addEventListener('click', function() {
+                element.classList.toggle('active');
+
+                var box = element.parentElement;
                 box.classList.toggle('clicked');
             })
         })
