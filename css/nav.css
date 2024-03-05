@@ -24,7 +24,7 @@
 }
 
 nav {
-    height: auto;
+    height: 5em;
     width: 100%;
     position: fixed;
     background-color: white;
