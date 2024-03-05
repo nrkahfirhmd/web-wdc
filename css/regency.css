@@ -170,7 +170,7 @@ button {
 
 .dot {
     width: 1.5em;
-    height: 1.5em;
+    aspect-ratio: 1 / 1;
     background-color: var(--minor);
     border-radius: 50%;
     cursor: pointer;
@@ -322,4 +322,77 @@ button {
     border: 2px solid var(--orange);
     z-index: 1;
     color: var(--orange);
+}
+
+.text-included {
+    transition: transform 0.5s, color 0.5s;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100%;
+        height: auto;
+        padding: 1em 2em;
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        padding: 1em 2em;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .image {
+        width: 100%;
+        height: 10em;
+        align-items: center;
+    }
+
+    .desc {
+        font-size: 0.75em;
+        width: 100%;
+    }
+
+    .name {
+        font-size: 1.2em;
+    }
+
+    .dot {
+        width: 1em;
+    }
+
+    .destinasi h1 {
+        font-size: 1.5em;
+    }
+    
+    .destinasi {
+        height: 50vh;
+        gap: 2em;
+    }
+
+    .destinasi .gallery * {
+        border-radius: 10px;
+    }
+
+    .text-included {
+        font-size: 2.5vw;
+    }
 }
