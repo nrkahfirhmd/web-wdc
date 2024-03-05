@@ -722,4 +722,170 @@ button {
             font-size: 3vw;
         }
     }
+
+    .regency {
+        .content {
+            flex-direction: column;
+        }
+    
+        .map {
+            width: 100%;
+            height: auto;
+            padding: 1em 2em;
+        }
+    
+        .map img {
+            width: 100%;
+        }
+    
+        .info {
+            width: 100%;
+            max-width: none;
+            height: auto;
+            padding: 1em 2em;
+        }
+    
+        .bg {
+            height: auto;
+        }
+    
+        .image {
+            width: 100%;
+            height: 10em;
+            align-items: center;
+        }
+    
+        .desc {
+            font-size: 3vw;
+            width: 100%;
+        }
+    
+        .name {
+            font-size: 8vw;
+        }
+    
+        .dot {
+            width: 1em; 
+            aspect-ratio: 1/1;
+            height: auto;
+        }
+
+        .selengkapnya {
+            font-size: 4vw;
+        }
+        
+    }
+
+    .traveltips-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tips-box {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 80vw;
+        height: 36vh;
+        gap: 1vw;
+        border-radius: 3vw;
+
+        .tips-img {
+            width: 100%;
+            border-radius: 3vw 3vw 0 0;
+        }
+
+        h2 {
+            font-size: 5vw;
+        }
+
+        p {
+            font-size: 3vw;
+        }
+
+        .tips-text {
+            gap: 1vh;
+        }
+
+        .tips-button {
+            padding: 4vw;
+
+            button {
+                font-weight: 700;
+                border-radius: 3vw;
+            }
+        }
+    }
+
+    .what-to-experience {
+        .showroom {
+            overflow-x: scroll; 
+        }
+
+        .box {
+            width: 60vw;
+        }
+    }
+
+    .faq {
+    
+        .faqs {
+            padding: 0;
+        }
+    
+        .faq-box {
+            max-height: 2em;
+            padding: 2em;
+            gap: 0;
+        }
+    
+        .faq-header h2 {
+            font-size: 1em;
+        }
+    
+        .faq-content {
+            font-size: 1em;
+        }
+    
+        .faq-content {
+            display: none;
+        }
+        
+        .faq-header.active+.faq-content {
+            display: block;
+        }
+    
+        .faq-header button {
+            font-size: 1.5em;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .review {
+        .header-wrapper {
+            h1 {
+                font-size: 10vw;
+            }
+
+            h3 {
+                font-size: 4.3vw;
+            }
+        }
+
+        .card-wrapper {
+            width: auto;
+
+            .card {
+                width: 60vw;
+                height: 30vh;
+                font-size: 1.2vw;
+                gap: 6vw;
+            }
+
+            .image img {
+                width: 100%;
+            }
+        }
+    }
 }
