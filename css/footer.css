@@ -1,16 +1,19 @@
 footer {
+    width: 100%;
     margin: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
+    height: auto;
 }
 
 .footer-content {
     width: 80%;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .footer-box {
@@ -42,6 +45,7 @@ footer {
     justify-content: start;
     align-items: end;
     gap: 2rem;
+    width: 30%;
     padding: .4rem;
 }
 
@@ -77,4 +81,68 @@ footer {
     height: 5px;
     background-color: var(--orange);
     margin-bottom: 1.5em;
+}
+
+.column-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.footer-content img {
+    width: 15em;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        height: auto;
+        width: auto;
+    }
+    
+    .footer-content img {
+        width: 8em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-nav {
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0;
+        width: 100%;
+    }
+
+    .garis {
+        width: 80%;
+    }
+
+    .footer-copyright {
+        justify-content: center;
+    }
+
+    .footer-box {
+        height: auto;
+    }
+
+    .footer-box a {
+        font-size: 1em;
+        width: 100%;
+        height: auto;
+    }
+
+    .column-box {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        gap: 0;
+        justify-content: space-between
+    }
+
+    .column-box h2 {
+        font-size: 1.2em;
+        height: auto;
+    }
 }

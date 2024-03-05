@@ -10,24 +10,47 @@
 </head>
 <body>
     <nav>
-        <a href="landing.html" class="logo">
-            <img src="https://media.discordapp.net/attachments/736596584212725822/1214157545049034773/Group_8473.png?ex=65f81754&is=65e5a254&hm=a8b5d540250af8fa7676b2f4a80b218e0030435334e6012b1f451c03db61f440&=&format=webp&quality=lossless"
-                alt="">
-        </a>
-        <ul>
-            <li><a href="regency.html" class="menu">Regency</a></li>
-            <li class="hoverable">
-                What To Experience
-                <ul class="wte">
-                    <li><a href="pegunungan.html" class="menu">Pegunungan</a></li>
-                    <li><a href="pantai.html" class="menu">Pantai</a></li>
-                    <li><a href="kebudayaan.html" class="menu">Kebudayaan</a></li>
-                    <li><a href="kepulauan.html" class="menu">Kepulauan</a></li>
-                </ul>
-            </li>
-            <li><a href="traveltips.html" class="menu">Travel Tips</a></li>
-            <li><a href="about-ntt.html" class="menu">About NTT</a></li>
-        </ul>
+        <div class="common">
+            <a href="landing.html" class="logo">
+                <img src="https://media.discordapp.net/attachments/736596584212725822/1214157545049034773/Group_8473.png?ex=65f81754&is=65e5a254&hm=a8b5d540250af8fa7676b2f4a80b218e0030435334e6012b1f451c03db61f440&=&format=webp&quality=lossless"
+                    alt="">
+            </a>
+            <div class="hamburger" onclick="displayMenu()">
+                <div class="garis x-kiri"></div>
+                <div class="garis"></div>
+                <div class="garis x-kanan"></div>
+            </div>
+            <ul>
+                <li><a href="regency.html" class="menu">Regency</a></li>
+                <li class="hoverable">
+                    What To Experience
+                    <ul class="wte">
+                        <li><a href="pegunungan.html" class="menu">Pegunungan</a></li>
+                        <li><a href="pantai.html" class="menu">Pantai</a></li>
+                        <li><a href="kebudayaan.html" class="menu">Kebudayaan</a></li>
+                        <li><a href="kepulauan.html" class="menu">Kepulauan</a></li>
+                    </ul>
+                </li>
+                <li><a href="traveltips.html" class="menu">Travel Tips</a></li>
+                <li><a href="about-ntt.html" class="menu">About NTT</a></li>
+            </ul>
+        </div>
+        <div class="resp">
+            <ul>
+                <li><a href="regency.html" class="menu">Regency</a></li>
+                <li class="hoverable">
+                    What To Experience
+                    <ul class="pop">
+                        <li><a href="pegunungan.html" class="menu">Pegunungan</a></li>
+                        <li><a href="pantai.html" class="menu">Pantai</a></li>
+                        <li><a href="kebudayaan.html" class="menu">Kebudayaan</a></li>
+                        <li><a href="kepulauan.html" class="menu">Kepulauan</a></li>
+                    </ul>
+                </li>
+                <li><a href="traveltips.html" class="menu">Travel Tips</a></li>
+                <li><a href="about-ntt.html" class="menu">About NTT</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
@@ -266,20 +289,22 @@
                 <img src="https://media.discordapp.net/attachments/736596584212725822/1214157545049034773/Group_8473.png?ex=65f81754&is=65e5a254&hm=a8b5d540250af8fa7676b2f4a80b218e0030435334e6012b1f451c03db61f440&=&format=webp&quality=lossless"
                     alt="">
             </a>
-            <div class="footer-box">
-                <h2>What To Experience</h2>
-                <a href="kepulauan.html">Kepulauan</a>
-                <a href="pegunungan.html">Pegunungan</a>
-                <a href="pantai.html">Pantai</a>
-                <a href="kebudayaan.html">Kebudayaan</a>
-            </div>
-            <div class="footer-box">
-                <h2>Regency</h2>
-                <a href="regency.html">Kupang</a>
-                <a href="regency.html">Manggarai Barat</a>
-                <a href="regency.html">Manggarai Timur</a>
-                <a href="regency.html">Alor</a>
-                <a href="regency.html">Sikka</a>
+            <div class="column-box">
+                <div class="footer-box">
+                    <h2>What To Experience</h2>
+                    <a href="kepulauan.html">Kepulauan</a>
+                    <a href="pegunungan.html">Pegunungan</a>
+                    <a href="pantai.html">Pantai</a>
+                    <a href="kebudayaan.html">Kebudayaan</a>
+                </div>
+                <div class="footer-box">
+                    <h2>Regency</h2>
+                    <a href="regency.html">Kupang</a>
+                    <a href="regency.html">Manggarai Barat</a>
+                    <a href="regency.html">Manggarai Timur</a>
+                    <a href="regency.html">Alor</a>
+                    <a href="regency.html">Sikka</a>
+                </div>
             </div>
             <div class="footer-nav">
                 <a href="traveltips.html">Travel Tips</a>
@@ -299,5 +324,6 @@
         show.style.backgroundImage = 'url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e6/4a/ed/love-is-what-you-think.jpg?w=1200&h=-1&s=1)';
     </script>
     <script src="../js/carousel.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 </html>

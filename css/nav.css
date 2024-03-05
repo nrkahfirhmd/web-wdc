@@ -24,8 +24,16 @@
 }
 
 nav {
-    height: 5em;
+    height: auto;
     width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+
+.common {
+    width: 100%;
+    height: 5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,4 +105,95 @@ li {
 
 .menu:hover::after {
     width: 100%;
+}
+
+.hamburger, .resp {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+    
+    .common {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    nav {
+        width: 100vw;
+    }
+    
+    .logo {
+        width: 5em;
+    }
+
+    .common ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        width: 2em;
+        height: 50%;
+        justify-content: space-between;
+    }
+
+    .kebuka {
+        cursor: pointer;
+    }
+
+    .hamburger .garis {
+        height: 3px;
+        width: 100%;    
+        background-color: var(--orange);
+        margin-bottom: 0;
+    }
+
+    .hamburger.kebuka {
+        display: block;
+        position: relative;
+        align-items: center;
+        height: auto;
+    }
+
+    .hamburger.kebuka .garis {
+        display: none;
+    }
+
+    .hamburger.kebuka .x-kiri {
+        display: block;
+        transform: rotate(45deg);
+        position: absolute;
+        transition: 500ms;
+    }
+
+    .hamburger.kebuka .x-kanan {
+        display: block;
+        transform: rotate(-45deg);
+        position: absolute;
+        transition: 500ms;
+    }
+
+    .ciluk-ba {
+        display: flex;
+    }
+
+    .resp {
+        height: auto;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .resp ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .resp .pop {
+        padding: 0.5em 1em;
+    }
 }
