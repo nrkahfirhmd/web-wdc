@@ -7,7 +7,6 @@ main {
 
 .tips {
     display: flex;
-    margin: 2rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -233,4 +232,95 @@ main {
 
 .gallery .source {
     font-size: 1.2em;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .tips {
+        padding: 2rem 0;
+    }
+    
+    .line1, .line2 {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }   
+
+    .general-box, .tips-box {
+        width: 80%;
+        aspect-ratio: 16 / 12;
+    }
+
+    .general-box h1 {
+        font-size: 3em;
+    }
+
+    .tips-icon img {
+        width: 15vw;
+    }
+
+    .tips-content {
+        font-size: 4vw;
+    }
+
+    .faq {
+        margin: 0;
+    }
+
+    .faqs {
+        padding: 0;
+    }
+
+    .faq-box {
+        max-height: 2em;
+        padding: 2em;
+        gap: 0;
+    }
+
+    .faq-header h2 {
+        font-size: 1em;
+    }
+
+    .faq-content {
+        font-size: 1em;
+    }
+
+    .faq-content {
+        display: none;
+    }
+    
+    .faq-header.active+.faq-content {
+        display: block;
+    }
+
+    .faq-header button {
+        font-size: 1.5em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artikel .gallery {
+        gap: 15px;
+    }   
+
+    .gallery .top, .gallery .bot {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery .heading {
+        font-size: 4.5vw;
+    }
+
+    .gallery .source {
+        font-size: 3.5vw;
+    }
+
+    .artikel h1 {
+        font-size: 2em;
+    }
 }

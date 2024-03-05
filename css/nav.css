@@ -31,6 +31,10 @@ nav {
     z-index: 2;
 }
 
+.nav {
+    height: 5em;
+}
+
 .common {
     width: 100%;
     height: 5em;
@@ -112,10 +116,6 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
-    * {
-        overflow-x: hidden;
-    }
-    
     .common {
         padding: 1rem;
         width: 100%;
