@@ -4,6 +4,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1em;
 }
 
 .footer-content {
@@ -60,5 +61,20 @@ footer {
     display: flex;
     justify-content: end;
     align-items: end;
+}
+
+.footer-copyright a {
     color: gray;
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+.garis {
+    width: 60%;
+    height: 5px;
+    background-color: var(--orange);
+    margin-bottom: 1.5em;
 }
