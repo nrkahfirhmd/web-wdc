@@ -699,6 +699,7 @@ button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 4vh;
     }
 
     .province-img {
@@ -828,7 +829,6 @@ button {
     }
 
     .faq {
-    
         .faqs {
             padding: 0;
         }
@@ -837,6 +837,11 @@ button {
             max-height: 2em;
             padding: 2em;
             gap: 0;
+        }
+
+        .faq-box.clicked {
+            max-height: 10em;
+            padding: 2rem;
         }
     
         .faq-header h2 {
@@ -874,11 +879,10 @@ button {
         }
 
         .card-wrapper {
-            width: auto;
 
             .card {
-                width: 60vw;
-                height: 30vh;
+                width: 20vw;
+                height: auto;
                 font-size: 1.2vw;
                 gap: 6vw;
             }
