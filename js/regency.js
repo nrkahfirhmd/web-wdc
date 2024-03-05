@@ -167,7 +167,11 @@ query2.forEach(function(element) {
     }, false);
 
     element.addEventListener('touchmove', function(e) {
-        e.preventDefault();
+        var deltaY = e.touches[0].clientY - startY;
+
+        if (Math.abs(deltaY) > 50) {
+            e.preventDefault();
+        }
     }, false);
 
     element.addEventListener('touchend', function(e) {
@@ -213,7 +217,11 @@ query3.forEach(function(element) {
     }, false);
 
     element.addEventListener('touchmove', function(e) {
-        e.preventDefault();
+        var deltaY = e.touches[0].clientY - startY;
+
+        if (Math.abs(deltaY) > 10) {
+            e.preventDefault();
+        }
     }, false);
 
     element.addEventListener('touchend', function(e) {

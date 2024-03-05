@@ -85,6 +85,9 @@ main h1 {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    transition: all 1s;
+    opacity: 0;
+    transform: translateY(300px);
 }
 
 .blank, .image, .content, .line {
@@ -341,6 +344,11 @@ main h2 {
 
 .bu-resp {
     display: none;
+}
+
+.observe-a {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
