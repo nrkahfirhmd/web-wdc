@@ -138,10 +138,8 @@ main h2 {
 .pakaian-adat {
     width: 80%;
     display: flex;
-    justify-content: center;
-    align-items: start;
     flex-direction: column;
-    gap: 35px;
+    gap: 1.5em;
 }
 
 .slider-wrapper {
@@ -211,7 +209,7 @@ main h2 {
     width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1.5em;
 }
 
 .alat-musik-tradisional .gallery {
@@ -267,6 +265,7 @@ main h2 {
     width: 80%;
     display: flex;
     flex-direction: column;
+    gap: 1.5em;
 }
 
 .tari-tradisional .gallery {
@@ -290,7 +289,7 @@ main h2 {
     width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 1.5em;
 }
 
 .gallery {
@@ -310,6 +309,7 @@ main h2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 10em;
+    gap: 1.5em;
 }
 
 .senjata-tradisional .gallery {
@@ -328,4 +328,115 @@ main h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.bu-resp {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .era {
+        display: none;
+    }
+    
+    main {
+        gap: 4em;
+    }   
+    
+    main {
+        overflow-x: hidden;
+    }
+    
+    .hero {
+        height: 40vh;
+    }
+
+    .timeline {
+        width: 90%;
+    }
+
+    main h1 {
+        font-size: 8vw;
+        margin: 2em 0;
+    }
+
+    .content .year {
+        font-size: 6vw;
+    }
+    
+    .content .header {
+        font-size: 3vw;
+    }
+
+    .content .text {
+        font-size: 2.5vw;
+    }   
+    
+    main h2 {
+        font-size: 8vw;
+    }
+
+    .showcase .name {
+        font-size: 6vw;
+    }
+
+    .rumah-adat .showcase {
+        height: 20vh;
+    }
+
+    .pakaian-adat .showcase {
+        width: 60vw;
+    }
+
+    .navigation p {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .tari-tradisional .top, .tari-tradisional .bot {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .tari-tradisional .showcase {
+        height: 20vh;
+        aspect-ratio: auto;
+    }
+
+    .senjata-tradisional .gallery, .alat-musik-tradisional .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .grid .name {
+        font-size: 4.5vw;
+    }
+
+    .slider {
+        overflow-x: scroll;
+    }
+
+    .navigation p {
+        display: none;
+    }
+
+    .bu-resp {
+        display: grid;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+
+    .era-resp {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 }
