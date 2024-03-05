@@ -219,7 +219,7 @@ query3.forEach(function(element) {
     element.addEventListener('touchmove', function(e) {
         var deltaY = e.touches[0].clientY - startY;
 
-        if (Math.abs(deltaY) > 10) {
+        if (Math.abs(deltaY) > 50) {
             e.preventDefault();
         }
     }, false);

@@ -699,7 +699,7 @@ button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 4vh;
+        margin: 0;
     }
 
     .province-img {
