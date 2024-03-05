@@ -12,6 +12,7 @@ main {
     font-size: 2.5em;
     position: relative;
     width: 80%;
+    margin-top: 1em;
 }
 
 .title::after {
@@ -131,6 +132,7 @@ main {
     width: 80%;
     height: auto;
     gap: 30px;
+    margin-bottom: 3em;
 }
 
 .active {

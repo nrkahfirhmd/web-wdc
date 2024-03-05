@@ -15,4 +15,10 @@ function observeElement(className, showClass) {
 }
 
 observeElement('.era', 'observe-a');
-observeElement('.era-resp', 'observe-a')
+observeElement('.era-resp', 'observe-a');
+observeElement('.province-section', 'show-a')
+observeElement('.traveltips-section', 'show-a')
+observeElement('.showroom', 'show-a')
+observeElement('.gallery', 'muncul-a')
+observeElement('.line1', 'slide-a')
+observeElement('.line2', 'slide-a')

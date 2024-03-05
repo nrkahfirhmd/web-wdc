@@ -84,28 +84,34 @@ main {
 
 .province-section {
     margin: -8rem 0 0 0;
-    width: 75.5%;
+    width: 80%;
     display: flex;
     justify-content: center;
     gap: 5%;
+    transform: translateX(-300px);
+    transition: all 1s;
+    opacity: 0;
 }
 
 .province-img {
-    width: 36rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .province-img img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .province-text {
-    width: 45rem;
+    width: 50%;
     font-size: 1.1rem;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     gap: 5%;
 }
 
@@ -113,8 +119,12 @@ main {
     font-family: 'Kaushan Script', cursive;
     color: #FF9209;
     font-weight: 200;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
+}
+
+.province-text .box p {
+    font-size: 1.5rem;
 }
 
 /* Regency */
@@ -329,6 +339,9 @@ button {
 .traveltips-section {
     width: 75.5%;
     margin: 2rem;
+    transform: translateX(-300px);
+    transition: all 1s;
+    opacity: 0;
 }
 
 .tips-box {
@@ -411,6 +424,9 @@ button {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     height: 100%;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all 1s;
 }
 
 .what-to-experience h1 {
@@ -667,7 +683,16 @@ button {
     aspect-ratio: 1 / 1;
 }
 
+.show-a {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 @media only screen and (max-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
+
     .hero-img {
         width: 100vw;
         height: 50vh;
@@ -705,7 +730,7 @@ button {
     .province-img {
         padding-left: 6vw;
         display: flex;
-        width: 50vw;
+        width: auto;
     }
 
     .province-text {
@@ -826,9 +851,15 @@ button {
         .box {
             width: 60vw;
         }
+
+        h1 {
+            font-size: 1.5em;
+        }
     }
 
     .faq {
+        gap: 0;
+
         .faqs {
             padding: 0;
         }
