@@ -315,6 +315,12 @@ button {
 
 .text-included {
     transition: transform 0.5s, color 0.5s;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .text-included:hover {
