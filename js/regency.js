@@ -170,7 +170,7 @@ query2.forEach(function(element) {
         var deltaY = e.touches[0].clientY - startY;
 
         if (Math.abs(deltaY) > 50) {
-            e.preventDefault();
+            return;
         }
     }, false);
 
@@ -220,7 +220,7 @@ query3.forEach(function(element) {
         var deltaY = e.touches[0].clientY - startY;
 
         if (Math.abs(deltaY) > 50) {
-            e.preventDefault();
+            return;
         }
     }, false);
 
