@@ -67,10 +67,6 @@ main {
     transition: all 1s;
 }
 
-.heading {
-    
-}
-
 .timeline {
     display: grid;
     width: 80%;
