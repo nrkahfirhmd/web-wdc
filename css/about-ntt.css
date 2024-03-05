@@ -446,5 +446,13 @@ main h2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        transition: all 1s;
+        opacity: 0;
+        transform: translateY(300px);
+    }
+
+    .observe-a {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

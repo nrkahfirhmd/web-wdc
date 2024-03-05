@@ -14,4 +14,5 @@ function observeElement(className, showClass) {
     hiddenElements.forEach((el) => observer.observe(el));
 }
 
-observeElement('.era', 'observe-a')
+observeElement('.era', 'observe-a');
+observeElement('.era-resp', 'observe-a')

@@ -170,7 +170,7 @@ query2.forEach(function(element) {
         var deltaY = e.touches[0].clientY - startY;
 
         if (Math.abs(deltaY) > 50) {
-            e.preventDefault();
+            return;
         }
     }, false);
 
@@ -219,8 +219,8 @@ query3.forEach(function(element) {
     element.addEventListener('touchmove', function(e) {
         var deltaY = e.touches[0].clientY - startY;
 
-        if (Math.abs(deltaY) > 10) {
-            e.preventDefault();
+        if (Math.abs(deltaY) > 50) {
+            return;
         }
     }, false);
 
