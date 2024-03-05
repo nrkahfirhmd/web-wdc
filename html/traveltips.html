@@ -225,14 +225,13 @@
     </footer>
 
     <script>
-        var dropButtons = document.querySelectorAll('.drop');
+        var header = document.querySelectorAll('.faq-header');
 
-        dropButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                var faqHeader = this.parentElement;
-                faqHeader.classList.toggle('active');
+        header.forEach(function (element) {
+            element.addEventListener('click', function () {
+                element.classList.toggle('active');
 
-                var box = faqHeader.parentElement;
+                var box = element.parentElement;
                 box.classList.toggle('clicked');
             })
         })
