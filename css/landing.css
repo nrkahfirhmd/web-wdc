@@ -466,7 +466,7 @@ button {
     padding: 4rem 0;
     width: 100%;
     height: max-content;
-    background-image: url(https://media.discordapp.net/attachments/1091347000940826634/1213853361372405790/image_15.png?ex=65f6fc09&is=65e48709&hm=b46a4c6ee83a30255b98d466c8ac9dfdc8ec3d07e3f6037cc4612917e6161016&=&format=webp&quality=lossless&width=1102&height=671);
+    background-image: url(../img/faq.png);
     background-size: cover;
     gap: 4em;
 }
@@ -623,6 +623,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.review .image img {
+    width: 15em;
+    height: 15em;
 }
 
 .review-wrapper {
