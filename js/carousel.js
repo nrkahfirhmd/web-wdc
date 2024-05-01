@@ -13,11 +13,11 @@ var pantai = [
     '/img/pantai_walakiri.jpg'
 ]
 var kebudayaan = [
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/eb/c8/71/charming.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/2e/56/a3/bena-traditional-village.jpg?w=600&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/76/8d/63/kampung-tarung.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6a/02/ae/praijing-cultural-village.jpg?w=900&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/84/db/d4/ngada.jpg?w=800&h=-1&s=1'
+    '/img/desa-wae-rebo.jpg',
+    '/img/kampung-tradisional-bena.jpg',
+    '/img/kampung-adat-tarung.jpg',
+    '/img/kampung-adat-praijing.jpg',
+    '/img/ngada.jpg'
 ]
 var kepulauan = [
     '/img/komodo.jpg',
