@@ -20,7 +20,7 @@ body {
     font-weight: bold;
     background-color: white;
     width: 100%;
-    background-image: url(https://media.discordapp.net/attachments/736596584212725822/1213971934170062888/Frame_8484.png?ex=65f76a77&is=65e4f577&hm=0658f1d7c916f196e82abae22decd4ecc40666ffa32baa454b5d9a00d2b8db74&=&format=webp&quality=lossless&width=525&height=350);
+    background-image: url(../img/wahoo.png);
     background-size: cover;
     background-position: center;
     color: var(--orange);
