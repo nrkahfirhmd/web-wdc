@@ -6,11 +6,11 @@ var pegunungan = [
     '/img/gunung_ebulobo.jpg'
 ]
 var pantai = [
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a9/ee/30/pink-beach-dans-le-komodo.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/d1/97/3c/nihiwatu-beach-2.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/63/bf/8b/photo2jpg.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/dc/d4/5c/nikmatnya-pantai-nan.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d6/71/17/that-dancing-tree.jpg?w=1200&h=-1&s=1'
+    '/img/pantai_pink.jpg',
+    '/img/pantai_nihiwatu.jpg',
+    '/img/pantai_koka.jpg',
+    '/img/pantai_nemberala.jpg',
+    '/img/pantai_walakiri.jpg'
 ]
 var kebudayaan = [
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/eb/c8/71/charming.jpg?w=1200&h=-1&s=1',
@@ -20,11 +20,11 @@ var kebudayaan = [
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/84/db/d4/ngada.jpg?w=800&h=-1&s=1'
 ]
 var kepulauan = [
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/cc/4a/d7/komodo-adala-sala-satu.jpg?w=800&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e6/4a/ed/love-is-what-you-think.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/51/ea/1e/kelor-is-the-best.jpg?w=1000&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/b3/f3/5e/kanawa-island.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/22/73/09/rinca-island-from-the.jpg?w=1200&h=-1&s=1'
+    '/img/komodo.jpg',
+    '/img/pulau_padar.jpg',
+    '/img/pulau_kelor.jpg',
+    '/img/pulau_kanawa.jpg',
+    '/img/pulau_rinca.jpg'
 ]
 
 var nPegunungan = [
